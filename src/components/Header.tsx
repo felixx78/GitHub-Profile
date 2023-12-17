@@ -30,16 +30,11 @@ const Search = () => {
   const [username] = useDebounce(input, 1000);
 
   useEffect(() => {
-    if(username){
+      (async () => {
+        const githubUser = await fetchByUsername(username || 'github');
 
-    (async () => {
-      const githubUser = await fetchByUsername(username);
-
-      console.log(githubUser);
-
-      dispatch(setResult(githubUser));
-    })();
-    }
+        dispatch(setResult(githubUser));
+      })();
   }, [username]);
 
   return (
