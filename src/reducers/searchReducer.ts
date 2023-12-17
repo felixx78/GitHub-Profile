@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { GithubUser } from "../lib/defition";
 
 const searchSlice = createSlice({
   name: "search",
   initialState: {
-    result: [],
+    result: GithubUser,
   },
   reducers: {
     setResult(state, action) {
