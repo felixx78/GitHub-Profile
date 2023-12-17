@@ -4,10 +4,10 @@ import { GithubUser } from "../lib/defition";
 const searchSlice = createSlice({
   name: "search",
   initialState: {
-    result: GithubUser,
+    result: {} as GithubUser,
   },
   reducers: {
-    setResult(state, action) {
+    setResult(state, action: { payload: GithubUser }) {
       state.result = action.payload;
     },
   },
