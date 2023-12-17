@@ -1,3 +1,10 @@
+export type RootState = {
+  search: {
+    result: GithubUser[];
+  };
+};
+
+
 export type GithubUser = {
   user: {
     avatar_url: string;
