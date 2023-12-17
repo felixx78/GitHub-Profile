@@ -1,9 +1,8 @@
 export type RootState = {
   search: {
-    result: GithubUser[];
+    result: GithubUser;
   };
 };
-
 
 export type GithubUser = {
   user: {
