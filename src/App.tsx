@@ -2,10 +2,8 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="text-[#CDD5E0]">
+    <div className="min-h-screen bg-[#20293a] text-[#CDD5E0] font-semibold">
       <Header />
-      <h1>App</h1>
-      <p>App</p>
     </div>
   );
 }
