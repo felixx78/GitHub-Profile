@@ -6,6 +6,7 @@ export type RootState = {
 
 export type GithubUser = {
   user: {
+    name: string;
     avatar_url: string;
     followers: number;
     following: number;
