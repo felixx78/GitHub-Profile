@@ -13,6 +13,7 @@ export type GithubUser = {
     following: number;
     login: string;
     location: string;
+    html_url: string;
   };
   repos: {
     id: number;
@@ -20,5 +21,6 @@ export type GithubUser = {
     description: string;
     stargazers_count: number;
     updated_at: string;
+    html_url: string;
   }[];
 };
