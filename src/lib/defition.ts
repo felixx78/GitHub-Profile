@@ -10,6 +10,7 @@ export type GithubUser = {
     followers: number;
     following: number;
     login: string;
+    location: string;
   };
   repos: {
     id: number;
