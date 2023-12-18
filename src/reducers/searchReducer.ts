@@ -5,8 +5,8 @@ type initialStateT = {
   result: GithubUser | undefined;
 };
 const initialState: initialStateT = {
-  result: undefined
-}
+  result: undefined,
+};
 
 const searchSlice = createSlice({
   name: "search",
