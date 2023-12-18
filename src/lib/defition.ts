@@ -22,5 +22,6 @@ export type GithubUser = {
     stargazers_count: number;
     updated_at: string;
     html_url: string;
+    forks: number;
   }[];
 };
