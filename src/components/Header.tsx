@@ -10,7 +10,7 @@ import { setResult } from "../reducers/searchReducer";
 const Header = () => {
   return (
     <header
-      className="min-h-[250px] pt-6"
+      className="min-h-[250px] pt-6 px-4"
       style={{
         backgroundImage: `url(${headerBg})`,
         backgroundSize: "cover",
@@ -30,15 +30,15 @@ const Search = () => {
   const [username] = useDebounce(input, 500);
 
   useEffect(() => {
-      (async () => {
-        const githubUser = await fetchByUsername(username || 'github');
+    (async () => {
+      const githubUser = await fetchByUsername(username || "github");
 
-        dispatch(setResult(githubUser));
-      })();
+      dispatch(setResult(githubUser));
+    })();
   }, [username]);
 
   return (
-    <div className="relative mx-auto w-[400px]">
+    <div className="relative mx-auto max-w-[400px]">
       <img className="absolute left-0 top-0 h-full p-2" src={searchIcon} />
       <input
         onChange={(e) => setInput(e.target.value)}
