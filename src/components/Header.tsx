@@ -27,7 +27,7 @@ const Search = () => {
   const dispatch = useDispatch();
 
   const [input, setInput] = useState("");
-  const [username] = useDebounce(input, 1000);
+  const [username] = useDebounce(input, 500);
 
   useEffect(() => {
       (async () => {
