@@ -118,6 +118,8 @@ const Home = () => {
       </div>
     );
   }
+
+  return <div className="mt-4 text-center text-2xl">Not Found</div>;
 };
 
 export default Home;

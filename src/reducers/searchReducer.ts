@@ -12,7 +12,7 @@ const searchSlice = createSlice({
   name: "search",
   initialState: initialState,
   reducers: {
-    setResult(state, action: { payload: GithubUser }) {
+    setResult(state, action: { payload: GithubUser | undefined }) {
       state.result = action.payload;
     },
   },
