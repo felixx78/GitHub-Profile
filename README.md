@@ -21,7 +21,7 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/v1st78/GitHub-Profile
+  git clone https://github.com/felixx78/GitHub-Profile
 ```
 
 Go to the project directory
